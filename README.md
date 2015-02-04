@@ -10,6 +10,9 @@
 
 ## Usage
 
+
+### Get started
+
 - `npm install mongodb` or `sudo npm install -g mongodb`
 
 - Create an `app.js`
@@ -28,3 +31,39 @@ MongoClient.connect(url, function(err, db) {
     db.close();
 });
 ```
+
+- Run `mongod` in command-line to boot up the server.
+
+- Run `node app.js`: You should see "Connected correctly to server" if it's connected correctly.
+
+
+### Simple CRUD
+
+#### 1. Insert collections
+
+```javascript
+var insertDocuments = function(db, callback) {
+  // Get the documents collection
+  var collection = db.collection('documents');
+  // Insert some documents
+  collection.insert([
+    {a : 1}, {a : 2}, {a : 3}
+  ], function(err, result) {
+    console.log("Inserted 3 documents into the document collection");
+    callback(result);
+  });
+}
+
+```
+
+```javascript
+MongoClient.connect(url, function(err, db) {
+    assert.equal(null, err);
+    console.log("Connected correctly to server");
+    insertDocuments(db, function() {
+        db.close();
+    });
+});
+```
+
+#### 2. Update documents
