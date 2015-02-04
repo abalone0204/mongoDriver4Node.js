@@ -11,7 +11,7 @@
 ## Usage
 
 
-### Get started
+### Get started with a simple application
 
 - `npm install mongodb` or `sudo npm install -g mongodb`
 
@@ -55,6 +55,8 @@ var insertDocuments = function(db, callback) {
 }
 
 ```
+
+- This mean we
 
 ```javascript
 MongoClient.connect(url, function(err, db) {

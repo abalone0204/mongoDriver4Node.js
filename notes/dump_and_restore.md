@@ -1,4 +1,5 @@
-### Notice
+
+## Dump v.s Restore
 
 - mongodump does not dump the content of the `local` database.
 
