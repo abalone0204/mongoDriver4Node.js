@@ -20,5 +20,6 @@
 > Example:
 > `mongoexport --host mongodb1.example.net --port 37017 --username user --password pass --collection contacts --db marketing --out mdb1-examplenet.json`
 
+- `--db` select the db
 
 `mongoexport --db bookmarks --collection links --out export_data/links.json`
