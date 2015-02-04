@@ -1,5 +1,3 @@
-## Mongodump
-
 ### Notice
 
 - mongodump does not dump the content of the `local` database.
