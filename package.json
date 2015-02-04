@@ -1,0 +1,27 @@
+{
+  "name": "mongoDriver4Node.js",
+  "version": "1.0.0",
+  "description": "First project with node.js and mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abalone0204/mongoDriver4Node.js.git"
+  },
+  "keywords": [
+    "node.js",
+    "mongoDB",
+    "driver"
+  ],
+  "dependencies": {
+    "mongodb": "*"
+  },
+  "author": "Denny Ku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abalone0204/mongoDriver4Node.js/issues"
+  },
+  "homepage": "https://github.com/abalone0204/mongoDriver4Node.js"
+}

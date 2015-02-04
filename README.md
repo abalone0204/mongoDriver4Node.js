@@ -7,3 +7,7 @@
 # What is "Driver" ?
 
 > An application communicates with MongoDB by way of a client library, called a driver, that handles all interaction with the database in a language appropriate to the application.
+
+# Usage
+
+- `npm install mongodb` or `sudo npm install -g mongodb`
